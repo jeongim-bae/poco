@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div>
+  <h1 id="title">Powercoders Survey Form
+  </h1>
+  <p id="description">Thank you for taking the time to help us improve the learning
+  </p>
+  <form id="survey-form" >
+    <label id="name-label" for="name">Name</label><br>
+    <input type="text" id="name" name="user_name" 
+    placeholder="Enter your name" required><br><br>
+    <label id="email-label" for="email">E-mail</label><br>
+    <input type="email" id="email" name="user_email" 
+    placeholder="Enter your email" required><br><br>
+    <label id="number-label" for="number">Age(optional)</label><br>
+    <input type="number" id="number" name="user_age" min="0" max="170" 
+    placeholder= "Your age"><br><br>
+    <label id="role-label" for="role">Which option best describes your 
+        current role?</label><br>
+    <select id="dropdown">
+        <option value="role" disabled>Current Role</option>
+        <option value="student">Student</option>
+        <option value="full">Full Time</option>
+        <option value="part">Part Time</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+     
+  <label id="rec-label" for="rec">Would you recommend Powercoders to a friend?
+</label><br>        
+   <input type="radio" name="rec" value="male" checked> Definitely<br>
+  <input type="radio" name="rec" value="female"> Maybe<br>
+  <input type="radio" name="rec" value="other"> Not sure<br>  <br> 
+     
+  <label id="imp" for="improve"> What would you like to see improved? (Check all that apply)
+</label><br>   
+ <input type="checkbox" name="improve1" value="front"> HTML<br>
+<input type="checkbox" name="improve2" value="back"> CSS<br>
+<input type="checkbox" name="improve3" value="other"> JavaScript<br><br>
+  
+  
+     <label for="msg">Message</label><Br>
+    <textarea id="msg" name="user_message" placeholder="Write your message"></textarea>
+
+    <br><br>
+          <button id="submit">Submit</button><br><br>
+     </div>
+<script src=forms.js></script>
+</body>
+</html>
