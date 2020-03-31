@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Skip the header because there is no specfic contents for header-->
+    <main>
+        <br>
+        <h1>Profile</h1>
+        <p>Hier koennen Sie Ihre Address-Angabe einsehen und anpassen.</p>
+        <!--Form is long, sot that <fieldset> tag was used to group them out-->
+            <form action="nextpage.html" method="POST">
+                <fieldset>
+                    <legend>Kontaktdaten</legend>
+                    <!--I would like to remove "Title" to remove extra information-->
+                    <!-- <label for="title">Title</label>
+                    <input type="text" name="title" id="title" placeholder="Dr.hc"><br> -->
+
+                    <!--I combined the two name field as one -->
+                    <label for="name">Name</label>
+                    <input type="text" name="vname" id="vname" placeholder="Peter Muster"><br>
+                
+                    <p>Geschlecht</p>
+                    <input type="radio" name="geschlecht" id="weiblich" value="weiblich">
+                    <label for="weiblich">W</label>
+                    <input type="radio" name="geschlecht" id="maenner" value="maenner" checked>
+                    <label for="maenner">M</label><br>
+                
+                    <p>Sprache</p>
+                    <input type="radio" name="sprache" id="de" value="de" checked>
+                    <label for="de">DE</label>
+                    <input type="radio" name="sprache" id="fr" value="fr">
+                    <label for="fr">FR</label>
+                    <input type="radio" name="sprache" id="it" value="it">
+                    <label for="it">IT</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kontaktdaten</legend>
+                    <label for="telefon">Telefon</label>
+                    <input type="tel" name="telefon" id="telefon" required><br>
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="optional"><br>
+                    <label for="hnummer">Haputnummer</label>
+                    <input type="tel" name="hnummer" id="hnummer" placeholder="optional"><br>
+                    
+                    <label for="fax">Fax</label>
+                    <input type="tel" name="fax" id="fax" placeholder="optional"><br>
+                    
+                    <label for="mail1">Mail 1</label>
+                    <input type="email" name="mail1" id="mail1" required><br>
+                    <label for="mail2">Mail 2</label>
+                    <input type="email" name="mail2" id="mail2" placeholder="optional"><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adressdaten</legend>
+                    <label for="firma">Firma</label>
+                    <input type="text" name="firma" id="firma" required>
+                    <label for="firma2">Zusatz Firma</label>
+                    <input type="text" name="firma2" id="firma2" placeholder="optional"><br>
+
+                    <label for="homepage">Homepageo</label>
+                    <input type="text" name="homepage" id="homepage" placeholder="optional"><br>
+
+                    <label for="street">Address / Haus Nr</label>
+                    <input type="text" name="street" id="street" placeholder="Musterstrasse">
+                    <label for="hausnummer"></label>
+                    <input type="number" name="hausnummer" id="hausnummer" placeholder="33"><br>
+                    <label for="address2">Zusatz Address </label>
+                    <input type="text" name="address2" id="address2" placeholder="optional"><br>
+
+                    <label for="postfach">Postfach</label>
+                    <input type="number" name="postfach" id="postfach" placeholder="optional"><br>
+
+                    <label for="plz">PLZ / ORT</label>
+                    <input type="number" name="plz" id="plz" placeholder="8850">
+                    <label for="ort"></label>
+                    <input type="text" name="ort" id="ort" placeholder="Musterstadt"><br>
+
+                    <label for="kanton">Kanton / Land</label>
+                    <input type="text" name="kanton" id="kanton" placeholder="ZH">
+                    <label for="land"></label>
+                    <input type="text" name="land" id="land" placeholder="Schweiz">
+                </fieldset>
+                <input type="submit" value="Speichern">
+            </form>
+    </main>
+</body>
+</html>
