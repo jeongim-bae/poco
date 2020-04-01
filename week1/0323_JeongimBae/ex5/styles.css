@@ -1,4 +1,12 @@
-div {
+header {
+    text-align: right;
+}
+
+.headerimg {
+    display: inline-block;
+}
+
+main{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +22,7 @@ img {
     margin-bottom: 25px;
 }
 
-#text-input {
+#search {
     width: 430px;
     height: 40px;
     border: 1px solid #afafaf75;
@@ -22,7 +30,7 @@ img {
     padding-left: 50px;
 }
 
-#text-input:hover {
+#search:hover {
     box-shadow: 0 0 7px #afafaf75;
 }
 
@@ -57,5 +65,3 @@ a:link {
 a:hover {
     text-decoration: underline;
   }
-
-
