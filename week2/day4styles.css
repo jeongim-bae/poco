@@ -1,0 +1,62 @@
+/* Team Excercise
+h2 { 
+    font-size: 4em; 
+    font-family: "Roboto", Arial, sans-serif; 
+    text-shadow: none; 
+    font-variant: small-caps; 
+    letter-spacing: normal;
+    text-align: left;
+    line-height: 154%;
+    text-transform: none;
+    font-weight: normal; 
+    }  */
+
+/* section {
+    font-size: 1em;
+} */
+/* 
+.first {
+    font-size:  2em;
+    font-weight: normal;
+}
+
+.second {
+    font-size: 2em;
+    font-style: italic;
+}
+
+.third {
+    font-size: 2em;
+    font-style: oblique;
+
+}
+
+section {
+    background-color: yellow;
+    background-image: 
+        linear-gradient(45deg, black 25%, transparent 25%, transpartent 75%, black 75%),
+        linear-gradient(45deg, black 25%, transparent 25%, transpartent 75%, black 75%);
+    background-size: 100px 100px;
+    background-position: 0 0 50px 50px;
+    
+} */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+   }
+   
+   @keyframes gradientBG {
+    0% {
+     background-position: 0% 50%; 
+    }
+    50% {
+     background-position: 100% 50%;
+    }
+    100% {
+     background-position: 0% 50%;
+    }
+   }
