@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey form</title>
+        <link rel="stylesheet" href="day2ex1_test.css">
+    </head>
+    <body>
+        <!--Skip the header because there is no specfic contents for header-->
+        <main>
+            <!--Form is long, sot that <fieldset> tag was used to group them out-->
+            <form action="nextpage.html" method="POST">
+                <h1>Profil</h1>
+                <h4>Hier koennen Sie Ihre Address-Angabe einsehen und anpassen.</h4>
+                
+                <!-- Personal data -->
+                <fieldset>
+                    <legend>Persoenlichen Daten</legend>
+                    <div class="data-container">
+                        <div class="label-container">
+                            <label for="title" >Title</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="title" id="title" placeholder="Dr.hc">
+                        </div>  
+
+                    <!-- combined the two name field as one -->
+                        <div class="label-container">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="vname" id="vname" placeholder="Peter Muster">
+                        </div>
+
+                        <div class="label-container">
+                            <label >Geschlecht</label>
+                        </div>
+                        <!-- <div class="input-container"> -->
+                            <div class="radio-toolbar">
+                                    <input type="radio" name="geschlecht" id="weiblich" value="weiblich">
+                                    <label for="weiblich">W</label>
+                                    <input type="radio" name="geschlecht" id="maenner" value="maenner" checked>
+                                    <label for="maenner">M</label>
+                            </div>
+                        <!-- </div> -->
+
+                       <div class="label-container">
+                           <label>Sprache</label>
+                       </div>
+                        <div class="input-container">
+                            <div class="radio-toolbar">
+                                <label for="de">DE</label>
+                                <input type="radio" name="sprache" id="de" value="de" checked>
+                                <label for="fr">FR</label>
+                                <input type="radio" name="sprache" id="fr" value="fr">
+                                <label for="it">IT</label>
+                                <input type="radio" name="sprache" id="it" value="it">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Contact data -->
+                <fieldset>
+                    <legend>Kontaktdaten</legend>
+                    <div class="data-container">
+                        <div class="label-container">
+                            <label for="telefon">Telefon</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="telefon" id="telefon" required>
+                        </div>
+                        <div class="label-container">
+                            <label for="mobile">Mobile</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="mobile" id="mobile" placeholder="optional">
+                        </div>
+                        <div class="label-container">
+                            <label for="hnummer">Haputnummer</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="hnummer" id="hnummer" placeholder="optional">
+                        </div>
+                        <div class="label-container">
+                            <label for="fax">Fax</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="fax" id="fax" placeholder="optional">
+                        </div>
+                        <div class="label-container">
+                            <label for="mail1">Mail 1</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="mail1" id="mail1" required>
+                        </div>
+                        <div class="label-container">
+                            <label for="mail2">Mail 2</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="mail2" id="mail2" placeholder="optional">
+                        </div>
+                    </div>
+                </fieldset>
+
+                    <!-- Address data -->
+                <fieldset>
+                    <legend>Adressdaten</legend>
+                    <div class="data-container">
+                        <div class="label-container">
+                            <label for="firma">Firma</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="firma" id="firma" required>
+                        </div>
+                        <div class="label-container">
+                            <label for="firma2">Zusatz Firma</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="firma2" id="firma2" placeholder="optional">
+                        </div>
+                        <div class="label-container">
+                            <label for="homepage">Homepage</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="homepage" id="homepage" placeholder="optional">
+                        </div>
+
+                        <!-- Combined address and house number -->
+                        <div class="label-container">
+                            <label for="address">Address / Haus Nr</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="street" id="address" placeholder="Musterstrasse 33">
+                        </div>
+                        <div class="label-container">
+                            <label for="address2">Zusatz Address </label>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="address2" id="address2" placeholder="optional">
+                        </div>
+                        <div class="label-container">
+                            <label for="postfach">Postfach</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="number" name="postfach" id="postfach" placeholder="optional">
+                        </div>
+                        <div class="label-container">
+                            <label for="plz">PLZ / ORT</label>
+                        </div>
+                        <div class="input-container">
+                                <input type="number" name="plz" id="plz" placeholder="8850">
+                                <label for="ort"></label>
+                                <input type="text" name="ort" id="ort" placeholder="Musterstadt">
+                        </div>
+                            
+                        <div class="label-container">
+                            <label for="kanton">Kanton / Land</label>
+                        </div>
+                            <div class="input-container">
+                                <input type="text" name="kanton" id="kanton" placeholder="ZH">
+                                <!-- QQQ aria-hidden doesn't work -->
+                                <label for="land" aria-hidden="true"></label>
+                                <input type="text" name="land" id="land" placeholder="Schweiz">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                    <input type="submit" class="submit" value="Speichern">
+            </form>
+        </main>
+    </body>
+</html>

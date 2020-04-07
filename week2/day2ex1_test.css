@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px auto;
+    max-width: 860px;
+}
+
+main {
+    background-color: rgb(245, 244, 244);
+    padding: 21px 68px;
+}
+
+/* thick line on top */
+h1:before {
+    border-top: 12px solid black;
+    display: block;
+    content: "";
+    margin: 10px 0px;
+    width: 200px;
+}
+
+h1 {
+    line-height: 4rem;
+}
+
+h4 {
+    line-height: 5rem;
+}
+
+
+
+/* line before each fieldset */
+legend:before {
+    content: "";
+    display: block;
+    border-top: 2px solid black;
+    width: 650px;
+    margin: 10px 0px;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
+    width: 650px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+form {
+    background-color: white;
+    padding: 35px 35px 150px 35px;
+}
+
+/* remove outline of the input */
+input {
+    width: 100%;
+    font-size: 1em;
+    outline: none; 
+    border: 0;
+}
+
+/* hide radio button */
+input[type="radio"] {
+    visibility:hidden;
+}
+
+input[placeholder="optional"] {
+    font-style: italic;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* labels on the left */
+.label-container {
+    color: rgb(160, 160, 160);
+    height: 30px;
+    margin: 20px 0;
+    width: 300px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* inputs on the right */
+.input-container {
+    border-bottom: 1px solid rgb(160, 160, 160);
+    height: 30px;
+    width: 350px;
+    margin : 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[name="plz"] ,input[name="kanton"]   {
+    width: 100px;
+}
+
+input[name="ort"], input[name="land"]  {
+    width: 250%;
+} 
+
+/* align the raido buttons using flexbox */
+.radio-toolbar {
+    display: flex;
+}
+
+/* radio button styling */
+.radio-toolbar label {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+.radio-toolbar input {
+    width: 0;
+}
+
+/* radio button size for Geschlecht */
+.radio-toolbar label[for="weiblich"], label[for="maenner"] {
+    width: 175px;
+    height: 50px;
+ } 
+
+ /* radio button size for Sprache */
+ .radio-toolbar label[for="de"], label[for="fr"], label[for="it"] {
+    width: 116px;
+    height: 50px;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    border-bottom: 5px solid rgb(214, 49, 76);
+}
+
+.radio-toolbar label:hover {
+    border-bottom: 5px solid pink;
+}
+
+.submit {
+    background-color:  rgb(214, 49, 76);  
+    border-radius: 7px;
+    color: #FFF;
+    float : right;
+    font-size: 1.3rem; 
+    font-weight: bold;
+    height: 70px;
+    margin-top: 30px;
+    padding: 10px 0;
+    text-align: center;
+    width: 180px;
+  }
+
+  
