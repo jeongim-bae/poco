@@ -61,7 +61,7 @@ fieldset {
 
 form {
     background-color: white;
-    padding: 35px;
+    padding: 35px 35px 150px 35px;
 }
 
 input {
@@ -103,6 +103,10 @@ input[placeholder="optional"] {
     width: 80px;
 }
 
+.onerow input[name="ort"], input[name="land"]  {
+    width: 300%;
+}
+
 /* align the raido buttons using flexbox */
 .radio-toolbar {
     float: right;
@@ -121,13 +125,11 @@ input[placeholder="optional"] {
     padding: 10px;
     text-align: center;
 }
-.onerow input[name="ort"], input[name="land"]  {
-    width: 300%;
-}
 
 /* radio inputs into the same line */
 .radio-toolbar label[for="weiblich"], label[for="maenner"] {
     width: 1000%;
+    /* QQQ how to change the size of button */
 }
 
 .radio-toolbar label[for="de"], label[for="fr"], label[for="it"] {
