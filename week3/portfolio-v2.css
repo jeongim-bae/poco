@@ -327,9 +327,14 @@ h3::after {
 
 .myworks-items {
   margin: 10px 10px 20px;
-  flex: 1 0 240px;
+  flex: 1 0 230px;
   width: 220px;
 }
+
+/* .myworks-items img {
+  width: 250px;
+} */
+
 
 .myworks-text {
   font-weight: bold;
@@ -403,9 +408,81 @@ aside {
 }
 
 /* =======My Blog========= */
-.blog-top {
+
+.myblogs-wrapper {
+  background-color: white;
   text-align: center;
+  margin-bottom: 70px;
 }
+
+.myblogs {
+  margin: 0 auto;
+  width: 64vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 285px);
+  grid-gap: 2rem;
+}
+
+.myblogs-items {
+  border: 1px solid rgb(220, 220, 220);
+  text-align: left;
+  border: 1px solid rgb(230 230 230);
+}
+
+.blogs-toptext {
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  width: 370px;
+}
+
+.myblogs-items img {
+  width: 285px;
+}
+
+.myblogs-texts {
+  padding: 1.5rem;
+}
+
+.myblogs-title {
+  color: rgb(61, 61, 61);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.myblogs-details *{
+  display: inline;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.myblogs-details img {
+  width: 10px;
+}
+
+.myblogs-summary {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  color: rgb(61, 61, 61);
+}
+.myblogs-summary::after {
+  border-top: 1px solid rgb(220, 220, 220);
+  content : " ";
+  display : block;
+  margin-top: 1.2rem;
+  margin-bottom : 1.8rem;
+}
+
+.myblogs-button {
+  border: 1px solid rgb(220, 220, 220);  
+  font-size: 1rem; 
+  height: 2rem;
+  padding: 2px;
+  text-align: center;
+  width: 8em;
+}
+
 
   /* ======================= */
   .photo-grid-container {
