@@ -1,0 +1,22 @@
+
+START
+    Initialize currentAge = 0
+    Initialize retireAge = 0
+    Initialize currentYear = 0
+    Initialize duration = 0
+    Intialize retireYear = 0
+
+    Promt ("What is your age ? e.g. 30") 
+    Promt ("At what age would you like to retire?")
+
+    Validate currentAge is integer and within the range (1 - 150)
+    Validate retireAge is integer and within the range (1 - 150)
+    Validate retireAge is greater than or equal to currentAge
+
+    currentYear = get current year from computer
+    duration = retireAge - currentAge
+    retireYear = currentYear + duration
+
+    Display ("You have " + duration + " years left until you can retire."   
+    Display ("It's " + currentYear + ", so you can retire in " + retireYear + "."
+END

@@ -1,0 +1,21 @@
+Inputs: my current age, and my expected retirement age
+Outputs: how many years left until retirement, and the year I retire
+Process: 1. calculate the duration until retirement ( my expected retirement age - my current age)
+         2. calucate the year of retirement ( current year + the duration until retirement)
+
+Constraints:
+1. The crreunt age and the retirement age should be integer and between 1 and 150.
+2. The retirement age should be older and eaqual to current age.
+
+Edge cases:
+1. The each input is empty.
+2. The each input is beyond the range. e.g. 0 or 151
+3. The  each input is not an integer. e.g. 30.5 or thirty
+4. The current age is higher than the retirement age. e.g. current age is 30, and retirement age is 25.
+5. Muiliple times of wrong value for an input.
+
+Test cases:
+1. The each input is integer within range. (current age: 30, retirement age: 50)
+2. The two inputs are same ages. (current age: 30, retirement age: 30))
+3. The boundary cases. (current age: 1, retirement age: 150)
+
