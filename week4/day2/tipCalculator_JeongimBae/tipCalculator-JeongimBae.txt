@@ -1,0 +1,17 @@
+Pseudocode for the tip calculator
+
+Initialize billAmount for bill amount
+Initialize tipRate for the tip rate
+Initialize tipAmount for the tip amount
+Initialize totalAmount for the total amount
+
+Promt user "Please enter the bill amount e.g 200"
+Promt user "Please enter the tip rate e.g. 15"
+
+Change the string of the bill amount to the number
+Change the string of the tip rate amount to the number
+
+Caculate the tip amount: tipAmount = billAmount * tipRate / 100
+Caculate the total amount: totalAmount = billAmount + tipAmount
+
+Display the billAmount and tipAmount
